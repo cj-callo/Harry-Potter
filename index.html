@@ -12,31 +12,33 @@
       <h1>Which Hogwarts House Do You Belong To?</h1>
       <h3>Answer the following questions to learn which Hogwarts house the sorting hat would put you in.</h3>
       <form id="quiz">
-        <p>Which of the following values do you find the most important?</p>
-        <select class="form-control">
-          <option>Bravery</option>
-          <option>Hard work</option>
-          <option>Intelligence</option>
-          <option>Winning</option>
-        </select>
+        <p>Which of the following characteristics do you find the most important?</p>
+          <select id="characteristic">
+            <option value="bravery">Bravery</option>
+            <option value="work">Hard work</option>
+            <option value="intelligence">Intelligence</option>
+            <option value="winning">Winning</option>
+          </select>
         <p>Of the following list, what is your favorite animal?</p>
-        <select class="form-control">
-          <option>Lion</option>
-          <option>Badger</option>
-          <option>Eagle</option>
-          <option>Snake</option>
+        <select id="animal">
+          <option value="lion">Lion</option>
+          <option value="badger">Badger</option>
+          <option value="eagle">Eagle</option>
+          <option value="snake">Snake</option>
         </select>
         <p>Of the following list, what is your favorite color combination?</p>
-        <select class="form-control">
-          <option>Scarlet and Gold</option>
-          <option>Yellow and Black</option>
-          <option>Blue and Bronze</option>
-          <option>Silver and Green</option>
+        <select id="color">
+          <option value="scarlet">Scarlet and Gold</option>
+          <option value="yellow">Yellow and Black</option>
+          <option value="blue">Blue and Bronze</option>
+          <option value="silver">Silver and Green</option>
         </select>
         <button type="submit" class="btn">Go!</button>
       </form>
-      <div class="output">
+
+      <div id="output">
+        <p>You belong in this house: <span id="house"></span></p>
       </div>
-    </div>
+      </div>
   </body>
 </html>
